@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ROCKTRIPPING</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">/
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+</style>
+
+    <!-- Font Awesome (íconos) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    <!-- CSS propio -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+    <!-- ========== HEADER ========== -->
+    <header class="header">
+        <div class="container header__inner">
+            <div class="logo">
+                 <img src="img/ampliguitarralogo.png"style="width: 45px; height: 45px;/>
+            </div>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ========== MAIN ========== -->
+    <main>
+
+        <!-- ===== SECCIÓN 1: HERO ===== -->
+        <section id="inicio" class="hero">
+            <div class="hero__content container">
+                <h1>Rock Tripping</h1>
+                <p>Somos una Revista de rock, enfocada en la cobertura y difusion, de shows nacionales e internacionales.</p>
+                <a href="#contacto" class="btn btn--primary">
+                    <i class="fas fa-rocket"></i>  Para presupuestos
+                </a>
+            </div>
+        </section>
+
+        <!-- ===== SECCIÓN 2: TARJETAS (Cards) ===== -->
+        <section id="servicios" class="cards-section container">
+            <h2>Nuestros Servicios</h2>
+            <div class="cards__grid">
+                <!-- Tarjeta 1 -->
+                <article class="card">
+                    <img src="img/camaralogo.png" style="width: 45px; height: 45px" alt="Fotografica"; /> 
+                    <div class="card__body">
+                        <h3>Cobertura Fotografica</h3>
+                        <p>Se realiza una cobertura fotografica acompañando a la banda desde el inicio hasta el final del show.</p>
+                        <a href="#" class="btn btn--secondary">Ver más</a>
+                    </div>
+                </article>
+                <!-- Tarjeta 2 -->
+                <article class="card">
+                    <img src="img/filmadoralogo.png" style="width: 45px; height: 45px" alt="Filmacion" />
+                    <div class="card__body">
+                        <h3>Cobertura de Video</h3>
+                        <p>Se realiza un cortometraje filmando desde el backstage, inicio y fin del show.</p>
+                        <a href="#" class="btn btn--secondary">Ver más</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ===== SECCIÓN 3: GALERÍA ===== -->
+        <section id="galeria" class="gallery-section">
+            <div class="container">
+                <h2>Galería de Proyectos</h2>
+                <div class="gallery__grid">
+                    <!-- 8 imágenes de ejemplo -->
+                    <img src="img/a77aque.jpg" alt="Proyecto 1" />
+                    <img src="img/charly&joaquin.jpg" alt="Proyecto 2" />
+                    <img src="img/dietotenhosen.jpg" alt="Proyecto 3" />
+                    <img src="img/elbordoluna.jpg" alt="Proyecto 4" />
+                    <img src="img/emintvg.jpg" alt="Proyecto 5" />
+                    <img src="img/feruizdiaz.jpg" alt="Proyecto 6" />
+                    <img src="img/juanse.jpg" alt="Proyecto 7" />
+                    <img src="img/miranda1.jpg" alt="Proyecto 8" />
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SECCIÓN 4: CONTACTO (Formulario) ===== -->
+        <section id="contacto" class="contact-section container">
+            <h2>Contacto</h2>
+            <form class="contact__form">
+                <!-- 1. Nombre -->
+                <div class="form__group">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+                </div>
+
+                <!-- 2. Email -->
+                <div class="form__group">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="tucorreo@mail.com" required />
+                </div>
+
+                <!-- 3. Teléfono -->
+                <div class="form__group">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="+54 9 11 1234-5678" />
+                </div>
+
+                <!-- 4. Motivo de contacto (select) -->
+                <div class="form__group">
+                    <label for="motivo">Motivo de contacto</label>
+                    <select id="motivo" name="motivo">
+                        <option value="consulta">Consulta general</option>
+                        <option value="presupuesto">Solicitar presupuesto</option>
+                        <option value="soporte">Soporte técnico</option>
+                    </select>
+                </div>
+
+                <!-- 5. Tipo de proyecto (radio) -->
+                <div class="form__group">
+                    <span class="form__label">Tipo de proyecto</span>
+                    <div class="radio-group">
+                        <label><input type="radio" name="tipo" value="web" /> Web</label>
+                        <label><input type="radio" name="tipo" value="app" /> App móvil</label>
+                        <label><input type="radio" name="tipo" value="ecommerce" /> E-commerce</label>
+                    </div>
+                </div>
+
+                <!-- 6. Comentarios (textarea) -->
+                <div class="form__group">
+                    <label for="comentarios">Comentarios</label>
+                    <textarea id="comentarios" name="comentarios" rows="4" placeholder="Cuéntanos más sobre tu proyecto..."></textarea>
+                </div>
+
+                <!-- Botones -->
+                <div class="form__actions">
+                    <button type="submit" class="btn btn--primary">
+                        <i class="fas fa-paper-plane"></i> Enviar
+                    </button>
+                    <button type="reset" class="btn btn--secondary">
+                        <i class="fas fa-undo-alt"></i> Limpiar
+                    </button>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p>&copy; 2026 ROCK Tripping - Todos los derechos reservados</p>
+            <div class="social-icons">
+                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
