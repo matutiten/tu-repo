@@ -7,19 +7,19 @@
 
 :root {
     
-    --color-primary: #1a1a2e;      /* Negro azulado */
-    --color-secondary: #e94560;    /* Rojo vibrante */
-    --color-accent: #533483;       /* Púrpura */
-    --color-bg: #0f0f1a;           /* Negro profundo */
-    --color-text: #191861;         /* Blanco */
-    --font-main: 'Indie Flower', sans-serif;
+    --color-primary: #1f5080;      /* Azul marino oscuro */
+    --color-secondary: #0066cc;    /* Azul corporativo */
+    --color-accent: #4d9eff;       /* Azul brillante */
+    --color-bg:#397a9b;           /* Azul muy claro */
+    --color-text: #0a2540;         /* Azul marino */
+    --font-main: 'Indie Flower', serif;
     --shadow: 0 8px 20px rgba(0,0,0,0.1);
     --radius: 12px;
     --transition: 0.3s ease;
 }
 
 body {
-    font-family: Indie Flower var(--font-main);
+    font-family: var(--font-main);
     background-color: var(--color-bg);
     color: var(--color-text);
     line-height: 1.6;
@@ -52,7 +52,7 @@ body {
     display: flex;
     align-items: center;
     gap: 8px;
-    color: #fff;
+    color: #4c97b8;
     font-size: 1.5rem;
     font-weight: 700;
 }
@@ -66,7 +66,7 @@ body {
     list-style: none;
 }
 .nav__list a {
-    color: #fff;
+    color: #0c3647;
     text-decoration: none;
     font-weight: 500;
     transition: color var(--transition);
@@ -77,13 +77,13 @@ body {
 
 /* ===== HERO ===== */
 .hero {
-    background: linear-gradient(135deg, #1a252f, #2c3e50);
+    background: linear-gradient(135deg, #1a252f, #2274c6);
     min-height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: #fff;
+    color: #211c7f;
     padding: 4rem 0;
 }
 
@@ -115,18 +115,18 @@ body {
 }
 .btn--primary {
     background: var(--color-secondary);
-    color: #fff;
+    color: #0d1b97;
 }
 .btn--primary:hover {
     background: #2980b9;
     transform: scale(1.05);
 }
 .btn--secondary {
-    background: #ecf0f1;
+    background: #27786c;
     color: var(--color-primary);
 }
 .btn--secondary:hover {
-    background: #d5dbdb;
+    background: #527777;
 }
 
 /* ===== CARDS ===== */
@@ -147,7 +147,7 @@ body {
 }
 
 .card {
-    background: #fff;
+    background: #136479;
     border-radius: var(--radius);
     box-shadow: var(--shadow);
     overflow: hidden;
@@ -171,13 +171,13 @@ body {
     font-size: 1.3rem;
 }
 .card__body p {
-    color: #555;
+    color: #132692;
     margin-bottom: 1.2rem;
 }
 
 /* ===== GALERÍA ===== */
 .gallery-section {
-    background: #fff;
+    background: #2b3c84;
     padding: 4rem 0;
 }
 .gallery-section h2 {
@@ -218,7 +218,7 @@ body {
 .contact__form {
     max-width: 720px;
     margin: 0 auto;
-    background: #fff;
+    background: #3659b1;
     padding: 2rem 2.5rem;
     border-radius: var(--radius);
     box-shadow: var(--shadow);
@@ -238,7 +238,7 @@ body {
 .form__group textarea {
     width: 100%;
     padding: 0.7rem 1rem;
-    border: 1px solid #ccc;
+    border: 1px solid #397a9b;
     border-radius: 8px;
     font-family: inherit;
     font-size: 1rem;
@@ -273,7 +273,7 @@ body {
 /* ===== FOOTER ===== */
 .footer {
     background: var(--color-primary);
-    color: #fff;
+    color: #0d4be8;
     padding: 1.5rem 0;
     margin-top: 2rem;
 }
